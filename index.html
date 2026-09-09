@@ -3,187 +3,378 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jagadish Bhatta</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
-    <script src="https://kit.fontawesome.com/e16ded9109.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Jagadish Bhatta is an Data Analyst and Digital Marketer focused on business insights, campaign performance, and practical digital analysis." />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:title" content="Jagadish Bhatta | Data Analyst & Digital Marketer" />
+    <meta property="og:description" content="Portfolio website for data analysis, digital marketing insights, and professional learning projects." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jagadishbhatta.com.np/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Jagadish Bhatta | Data Analyst & Digital Marketer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
   </head>
   <body>
-    <!-- ---Head--- -->
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/Logo.png" alt="" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="mobile-header d-lg-none">
+      <a href="#home" class="mobile-brand" aria-label="Go to home section">
+        <img
+          src="images/dp.jpg"
+          alt="Jagadish Bhatta portrait"
+          class="mobile-brand-photo"
+          width="42"
+          height="42"
+          loading="eager"
+        />
+        <span>Jagadish Bhatta</span>
+      </a>
+      <button
+        class="mobile-menu-toggle"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileSidebarNav"
+        aria-label="Open navigation menu"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+    </header>
+
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileSidebarNav" aria-labelledby="mobileSidebarNavLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileSidebarNavLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="offcanvas-nav" aria-label="Mobile navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </nav>
-        <div class="header-text">
-          <p>UI/UX Designer</p>
-          <h1>Hi, I'm <span> Jagadish Bhatta</span><br />from Mahendranagar</h1>
+        <div class="offcanvas-footer">
+          <div class="sidebar-meta">
+            <div class="social-links" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/jagadishbhatta/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/ifeeldeveloper/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://instagram.com/ijagadishbhatta/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://x.com/ijagadishbhatta/" target="_blank" rel="noreferrer" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <a class="sidebar-email" href="mailto:jagadishbhatta16@gmail.com">jagadishbhatta16@gmail.com</a>
+          </div>
         </div>
       </div>
     </div>
-    <hr />
 
-    <!-- ---About--- -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/AboutMe.jpg" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              maxime assumenda voluptatem quos pariatur impedit minus sequi
-              consectetur? Quae facilis ipsam ut, earum dolorum autem asperiores
-              cupiditate laboriosam atque hic corporis assumenda magni
-              doloribus, illum adipisci eveniet.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+    <div class="page-shell">
+      <aside class="sidebar d-none d-lg-flex">
+        <div class="profile-block">
+          <a href="#home" class="profile-home-link" aria-label="Go to home section">
+            <img
+              src="images/dp.jpg"
+              alt="Jagadish Bhatta portrait"
+              class="profile-photo"
+              width="130"
+              height="130"
+              loading="eager"
+            />
+            <h2>Jagadish Bhatta</h2>
+          </a>
+          <p class="profile-role">Data Analyst<br />&amp; Digital Marketer</p>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="sidebar-meta">
+            <div class="social-links" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/jagadishbhatta/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/ifeeldeveloper/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://instagram.com/ijagadishbhatta/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://x.com/ijagadishbhatta/" target="_blank" rel="noreferrer" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+            <a class="sidebar-email" href="mailto:jagadishbhatta16@gmail.com">jagadishbhatta16@gmail.com</a>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main-content" class="content-panel">
+        <section id="home" class="hero-section">
+          <div class="hero-copy">
+            <p class="eyebrow">Available for freelance work.</p>
+            <h1>
+              I am <span class="accent-block">a</span>
+            </h1>
+            <div class="role-switch" aria-live="polite">
+              <span class="role-word is-visible">Data Analyst</span>
+              <span class="role-word">Digital Marketer</span>
+              <span class="role-word">Python Developer</span>
+              <span class="role-word">Problem Solver</span>
+              <span class="role-word">Backend Developer</span>
+            </div>
+            <p class="lead">
+              I’m Jagadish Bhatta, a Data Analyst and Digital Marketer interested in how
+              data can improve business decisions. My focus is on connecting digital marketing with
+              analytics to help businesses understand campaign performance and identify real
+              opportunities for improvement.
+            </p>
+            <div class="hero-actions">
+              <a href="resume/LatestUpdatedCVjagadishBhatta.pdf" target="_blank" rel="noreferrer" class="btn btn-primary">Download CV</a>
+              <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
+          </div>
+
+          <div class="portrait-wrap" aria-label="Jagadish Bhatta portrait section">
+            <a href="#home" class="portrait-home-link" aria-label="Go to home section">
+              <img
+                src="images/ppc.jpeg"
+                alt="Professional portrait of Jagadish Bhatta"
+                class="portrait-image"
+                width="800"
+                height="800"
+                loading="eager"
+              />
+            </a>
+          </div>
+        </section>
+
+        <section id="about" class="info-section section-muted">
+          <div class="section-heading">
+            <p class="section-kicker">About me</p>
+            <h2>Profile</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>I’m Jagadish Bhatta, a Data Analyst and Digital Marketer with a Bachelor's degree in Information Technology from Tribhuvan University. My work focuses on digital marketing, campaign analysis and standalone data analysis.</p>
+              <p>I help businesses connect marketing activities with measurable goals through Meta Ads, Google Ads, SEO, Email and WhatsApp marketing. By analysing traffic, engagement, leads and conversions, I aim to identify what works and recommend improvements.</p>
+              <p>My data analysis work includes cleaning and preparing data, extracting information with SQL, exploring datasets and creating clear reports using Python, Excel, Google Sheets and Tableau.</p>
+              <div class="about-cta"> </div>
+            </div>
+            <div class="about-info">
+              <div>
+                <span class="meta-label">Skills</span>
+                <p>Python, SQL, Numpy, Pandas, Matplotlip, Seaborn, Tableau, Excel &amp; Google Sheets, Data Cleaning, Data Analysis, Dashboarding, Campaign Insights, SEO, Digital Marketing Analytics.</p>
+              </div>
+              <div>
+                <span class="meta-label">Education</span>
+                <p>Bachelor’s in Information Technology, Tribhuvan University, graduated in 2024.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="info-section section-muted">
+          <div class="section-heading">
+            <p class="section-kicker">Work in progress</p>
+            <h2>Projects</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="info-card">
+              <div class="thumb thumb-one" aria-hidden="true"></div>
+              <div class="card-body">
+                <span class="tag">Machine Learning</span>
+                <h3>Heart Disease Prediction Model</h3>
+                <p>I performed data cleaning, prepared the dataset for machine learning, trained multiple models, and compared their performance to select the best one.</p>
+                <div class="project-links" style="margin-top: 0.9rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <a href="https://predicthearthealth.streamlit.app" target="_blank" rel="noreferrer">Live App</a>
+                  <a href="https://github.com/ifeeldeveloper/heart-disease-prediction-ml" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <div class="thumb thumb-two" aria-hidden="true"></div>
+              <div class="card-body">
+                <span class="tag">In progress</span>
+                <h3>Campaign Analysis</h3>
+                <p>Understanding how campaign activity can be translated into clear performance insight and improvement opportunities.</p>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <div class="thumb thumb-three" aria-hidden="true"></div>
+              <div class="card-body">
+                <span class="tag">In progress</span>
+                <h3>Business Insights Portfolio</h3>
+                <p>Sharing analytical thinking, project notes, and practical learning on a growing portfolio.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="services" class="info-section">
+          <div class="section-heading">
+            <p class="section-kicker">What I do</p>
+            <h2>Services</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h3>Digital Marketing &amp; Campaign Analysis</h3>
+              <p>Meta Ads, Google Ads, email and WhatsApp marketing, SEO, and campaign performance review.</p>
               <ul>
-                <li><span>UI/UX Design</span><br />Designing Web/App interfaces</li>
-                <li><span>Web Development</span><br />Web/App Development</li>
-                <li><span>App Development</span><br />Building Android/iOS apps</li>
+                <li>Traffic, engagement, leads, and conversion analysis</li>
+                <li>Campaign reporting and recommendations</li>
+                <li>Measurement setup for business goals</li>
               </ul>
-            </div>
-            <div class="tab-contents" id="experience">
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-database-check"></i></div>
+              <h3>Data Analysis</h3>
+              <p>Data cleaning, SQL extraction, exploratory analysis, and dashboard-ready reporting.</p>
               <ul>
-                <li><span>2024</span><br />Internship at Cotiviti</li>
-                <li><span>2024</span><br />UI/UX Design Training at Digital Pathshala</li>
-                <li><span>2023</span><br />Technical Lead at SNSC IT Club</li>
-                <li><span>2023</span><br />Full Stack Development</li>
+                <li>Excel and Google Sheets analysis</li>
+                <li>SQL queries and data preparation</li>
+                <li>Clear reports and business insights</li>
               </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2019-2025</span><br />Bachelors in Information Technology</li>
-                <li><span>2024</span><br />UI/UX Design Training at Digital Pathshala</li>
-                <li><span>2016-2019</span><br />+2 Little Buddha Academy</li>
-                <li><span>2016</span><br />S.L.C Nav Pratibha Public Secondary School</li>
-              </ul>
-            </div>
+            </article>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
 
-    <!-- ---Services--- -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>UI/UX Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              quisquam voluptates sed natus maxime exercitationem dolorum nemo
-              quos eum neque.
-            </p>
-            <a href="#">Learn More</a>
+        <section id="blog" class="info-section">
+          <div class="section-heading">
+            <p class="section-kicker">Insights</p>
+            <h2>Blog</h2>
           </div>
-          <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>Web Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              tempora quis eveniet reprehenderit at laborum perferendis eius
-              quae laboriosam deserunt.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>App Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              unde nihil eos, nisi reiciendis ullam doloremque tempore labore
-              corrupti vero?
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ---Portfolio--- -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" alt="" />
-            <div class="layer">
-              <h3>Social Media</h3>
-              <p>The app connects you to the talented people around the world. Download it form playstore.</p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
+          <div class="card-grid">
+            <article class="info-card">
+              <div class="thumb thumb-one" aria-hidden="true"></div>
+              <div class="card-body">
+                <span class="tag">Analytics</span>
+                <h3>How campaign data tells a clearer story</h3>
+                <p>Thoughts on translating clicks, leads, and conversions into actionable business decisions.</p>
+              </div>
+            </article>
+            <article class="info-card">
+              <div class="thumb thumb-two" aria-hidden="true"></div>
+              <div class="card-body">
+                <span class="tag">Marketing</span>
+                <h3>Understanding funnel drop-offs</h3>
+                <p>Simple ways to examine where audiences stop engaging and what that means for strategy.</p>
+              </div>
+            </article>
+            <article class="info-card">
+              <div class="thumb thumb-three" aria-hidden="true"></div>
+              <div class="card-body">
+                <span class="tag">Learning</span>
+                <h3>Building better reporting habits</h3>
+                <p>Practical notes on creating dashboards and summaries that people can actually use.</p>
+              </div>
+            </article>
           </div>
-          <div class="work">
-            <img src="images/work-2.png" alt="" />
-            <div class="layer">
-              <h3>Online Shopping App</h3>
-              <p>The app connects you to the talented people around the world. Download it form playstore.</p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-3.png" alt="" />
-            <div class="layer">
-              <h3>Music App</h3>
-              <p>The app connects you to the talented people around the world. Download it form playstore.</p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-      </div>
-    </div>
+        </section>
 
-    <!-- ---Contact--- -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>jagadishbhatta16@gmail.com</p>
-            <p><i class="fa-solid fa-phone-volume"></i>9868806764</p>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/ifeeldeveloper"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.github.com/ifeeldeveloper"><i class="fa-brands fa-square-github"></i></i></a>
-              <a href="https://www.facebook.com/ifeeldeveloper"><i class="fa-brands fa-square-facebook"></i></i></a>
-              <a href="https://www.instagram.com/ifeeldeveloper"><i class="fa-brands fa-square-instagram"></i></a>
-              <a href="https://www.twitter.com/ifeeldeveloper"><i class="fa-brands fa-square-twitter"></i></a>
-            </div>
-            <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+        <section id="contact" class="info-section">
+          <div class="section-heading">
+            <p class="section-kicker">Get in touch</p>
+            <h2>Contact</h2>
           </div>
-          <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input type="email"name="Email" placeholder="Your Email" required />
-              <textarea name="message" rows="6" placeholder="Your Message" ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+
+          <div class="contact-wrap">
+            <form class="contact-form" novalidate>
+              <div class="field-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="field-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="field-group">
+                <label for="enquiry-type">Enquiry type</label>
+                <select id="enquiry-type" name="enquiryType" required>
+                  <option value="">Select</option>
+                  <option value="Freelance project">Freelance project</option>
+                  <option value="Job or internship opportunity">Job or internship opportunity</option>
+                  <option value="General enquiry">General enquiry</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
             </form>
+
+            <div class="contact-card left-profile-card">
+              <div class="profile-header">
+                <h3></h3>
+              </div>
+
+              <div class="tech-stack-block">
+                <h4>Tech Ecosystem</h4>
+                <div class="tech-stack-row" aria-label="Technology stack">
+                  <span class="tech-item" title="Python" aria-label="Python">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/330px-Python-logo-notext.svg.png" alt="Python" />
+                  </span>
+                  <span class="tech-item" title="SQL" aria-label="SQL">
+                    <img src="https://gbbdd.abrilcode.com/lib/exe/fetch.php?cache=&w=512&h=512&tok=1a3fae&media=bloque4:sql.png" alt="SQL" />
+                  </span>
+                  <span class="tech-item" title="NumPy" aria-label="NumPy">
+                    <img src="https://cdn.simpleicons.org/numpy/66d6a9" alt="NumPy" />
+                  </span>
+                  <span class="tech-item" title="Pandas" aria-label="Pandas">
+                    <img src="https://cdn.simpleicons.org/pandas/7aa8ff" alt="Pandas" />
+                  </span>
+                  <span class="tech-item" title="Matplotlib" aria-label="Matplotlib">
+                    <img src="https://icon.icepanel.io/Technology/svg/Matplotlib.svg" alt="Matplotlib" />
+                  </span>
+                  <span class="tech-item" title="Seaborn" aria-label="Seaborn">
+                    <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn" />
+                  </span>
+                  <span class="tech-item" title="Tableau" aria-label="Tableau">
+                    <img src="https://img.icons8.com/color/512/tableau-software.png" alt="Tableau" />
+                  </span>
+                  <span class="tech-item" title="Power BI" aria-label="Power BI">
+                    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/powerbi.webp" alt="Power BI" />
+                  </span>
+                  <span class="tech-item" title="Excel" aria-label="Excel">
+                    <img src="https://res.cdn.office.net/files/fabric-cdn-prod_20251117.001/assets/brand-icons/product/svg/excel_16x1.svg" alt="Excel" />
+                  </span>
+                </div>
+              </div>
+
+              <p class="profile-summary">
+                Data Analyst and Digital Marketer focused on turning raw data into clear business decisions,
+                stronger campaign strategy, and measurable growth.
+              </p>
+
+              <div class="contact-socials" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/jagadishbhatta/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/ifeeldeveloper/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.facebook.com/ijagadishbhatta/" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ijagadishbhatta/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/ijagadishbhatta/" target="_blank" rel="noreferrer" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+              </div>
+
+              <a href="resume/LatestUpdatedCVjagadishBhatta.pdf" target="_blank" rel="noreferrer" class="btn btn-primary btn-download">Download CV</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Made with <i class="fa-solid fa-heart"></i> by Jagadish Bhatta</p>
-      </div>
+        </section>
+      </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
