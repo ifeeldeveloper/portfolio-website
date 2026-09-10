@@ -4,20 +4,19 @@ const root = document.documentElement;
 const navLinks = document.querySelectorAll('.nav-link');
 const navCollapse = document.getElementById('mainNavbar');
 const mobileOffcanvas = document.getElementById('mobileSidebarNav');
-const rotatingWords = Array.from(document.querySelectorAll('.role-word'));
+const rotatingRoleNames = ['Data Analyst', 'Digital Marketer', 'Python Developer', 'Problem Solver', 'Backend Developer'];
+const roleDescriptionWord = document.querySelector('.role-description-word');
 const backToTopButton = document.querySelector('.back-to-top');
 
 function rotateRoleWords() {
-  if (!rotatingWords.length) return;
+  if (!roleDescriptionWord) return;
 
   let index = 0;
 
   setInterval(() => {
-    rotatingWords.forEach((word, wordIndex) => {
-      word.classList.toggle('is-visible', wordIndex === index);
-    });
+    roleDescriptionWord.textContent = rotatingRoleNames[index];
 
-    index = (index + 1) % rotatingWords.length;
+    index = (index + 1) % rotatingRoleNames.length;
   }, 2200);
 }
 
