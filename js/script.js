@@ -102,7 +102,7 @@ if (backToTopButton) {
 root.setAttribute('data-theme', 'dark');
 rotateRoleWords();
 
-const CONTACT_API_URL = '/api/contact';
+const CONTACT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzDpZVjC8ozIT1HyGAfhlBI-vhPdueGgX5q4bckZHejfLolUvQMS1fYaK2TxJObFKg4zg/exec';
 
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
@@ -137,31 +137,17 @@ if (contactForm) {
     };
 
     try {
-      const response = await fetch(CONTACT_API_URL, {
+      await fetch(CONTACT_SCRIPT_URL, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain;charset=UTF-8',
         },
         body: JSON.stringify(payload),
+        mode: 'no-cors',
       });
 
-      const responseText = await response.text();
-      console.log('Apps Script response:', response.status, responseText);
-
-      let result = null;
-      try {
-        result = JSON.parse(responseText);
-      } catch (error) {
-        result = { status: 'error', message: responseText || 'Unknown server error' };
-      }
-
-      if (response.ok && result.status === 'success') {
-        alert('Your message has been sent successfully.');
-        contactForm.reset();
-      } else {
-        const message = result.message || responseText || 'Something went wrong while sending your message.';
-        alert(message);
-      }
+      alert('Your message has been sent successfully.');
+      contactForm.reset();
     } catch (error) {
       console.error('Contact form submit failed:', error);
       alert('Something went wrong. Please try again.');

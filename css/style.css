@@ -432,6 +432,13 @@ textarea {
   box-shadow: 0 16px 24px rgba(217, 141, 42, 0.18);
 }
 
+.hero-actions .btn-primary,
+.hero-actions .btn-primary:hover,
+.hero-actions .btn-primary:focus-visible,
+.hero-actions .btn-primary:active {
+  color: var(--btn-text);
+}
+
 .btn-primary:hover,
 .btn-primary:focus-visible,
 .btn-primary:active,
