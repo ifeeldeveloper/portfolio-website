@@ -566,6 +566,15 @@ textarea {
   font-size: 1.5rem;
 }
 
+.card-body h3 a {
+  color: inherit;
+}
+
+.card-body h3 a:hover,
+.card-body h3 a:focus-visible {
+  color: var(--accent);
+}
+
 .card-body p,
 .service-card p,
 .about-copy p,
@@ -573,6 +582,18 @@ textarea {
 .about-info p {
   margin: 0;
   color: var(--muted);
+}
+
+.project-links a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.project-links a:hover,
+.project-links a:focus-visible {
+  color: var(--accent-soft);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .service-card {
